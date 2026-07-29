@@ -1,0 +1,220 @@
+{
+	"version": 1,
+	"seed": "hand-authored-20260729",
+	"company": {
+		"name": "Petrel & Pine Supply Co.",
+		"tagline": "Field-tested gear for long weather.",
+		"supportEmail": "support@petrelandpine.example",
+		"wholesaleEmail": "wholesale@petrelandpine.example",
+		"phone": "+1 (555) 014-7788",
+		"hours": "Monday to Friday, 8am to 6pm Mountain Time",
+		"address": "4180 Larkspur Bench Road, Suite 12, Bozeman, MT 59718"
+	},
+	"products": [
+		{
+			"slug": "cirrus-2-tent",
+			"name": "Cirrus 2 Tent",
+			"category": "tents",
+			"price": 389,
+			"sku": "PP-TN-201",
+			"weightGrams": 1720,
+			"materials": "20D ripstop nylon fly, DAC Featherlite poles",
+			"care": "Dry completely before storage; store loosely, never compressed."
+		},
+		{
+			"slug": "stratus-3-tent",
+			"name": "Stratus 3 Tent",
+			"category": "tents",
+			"price": 469,
+			"sku": "PP-TN-302",
+			"weightGrams": 2310,
+			"materials": "30D ripstop nylon, aluminum Y-hubs",
+			"care": "Rinse zippers with fresh water after coastal trips."
+		},
+		{
+			"slug": "nimbus-1-tent",
+			"name": "Nimbus 1 Tent",
+			"category": "tents",
+			"price": 289,
+			"sku": "PP-TN-103",
+			"weightGrams": 1140,
+			"materials": "15D sil-nylon, carbon apex pole",
+			"care": "Reapply seam sealant annually if pitched more than 30 nights a year."
+		},
+		{
+			"slug": "kestrel-48-pack",
+			"name": "Kestrel 48 Pack",
+			"category": "packs",
+			"price": 219,
+			"sku": "PP-PK-481",
+			"weightGrams": 1380,
+			"materials": "210D Robic nylon, EVA foam harness",
+			"care": "Hand wash with mild soap; never machine dry."
+		},
+		{
+			"slug": "merlin-62-pack",
+			"name": "Merlin 62 Pack",
+			"category": "packs",
+			"price": 279,
+			"sku": "PP-PK-621",
+			"weightGrams": 1710,
+			"materials": "420D pack cloth base, aluminum stay",
+			"care": "Remove the stay before washing."
+		},
+		{
+			"slug": "swift-24-daypack",
+			"name": "Swift 24 Daypack",
+			"category": "packs",
+			"price": 129,
+			"sku": "PP-PK-241",
+			"weightGrams": 640,
+			"materials": "100D nylon mini-ripstop",
+			"care": "Spot clean; air dry away from direct sun."
+		},
+		{
+			"slug": "meridian-rain-shell",
+			"name": "Meridian Rain Shell",
+			"category": "shells",
+			"price": 249,
+			"sku": "PP-SH-114",
+			"weightGrams": 312,
+			"materials": "3-layer 30D shell, 20k/20k membrane",
+			"care": "Wash cool, tumble low, iron on low to revive DWR."
+		},
+		{
+			"slug": "boreal-down-parka",
+			"name": "Boreal Down Parka",
+			"category": "shells",
+			"price": 359,
+			"sku": "PP-SH-227",
+			"weightGrams": 587,
+			"materials": "850-fill RDS down, 10D shell",
+			"care": "Wash with down-specific soap; dry with clean tennis balls."
+		},
+		{
+			"slug": "gale-wind-anorak",
+			"name": "Gale Wind Anorak",
+			"category": "shells",
+			"price": 139,
+			"sku": "PP-SH-090",
+			"weightGrams": 96,
+			"materials": "7D nylon, PFAS-free DWR",
+			"care": "Machine wash cold in a mesh bag."
+		},
+		{
+			"slug": "ember-canister-stove",
+			"name": "Ember Canister Stove",
+			"category": "stoves",
+			"price": 74,
+			"sku": "PP-ST-011",
+			"weightGrams": 83,
+			"materials": "Titanium burner, brass valve",
+			"care": "Check the O-ring before each season; replace if cracked."
+		},
+		{
+			"slug": "hearth-remote-stove",
+			"name": "Hearth Remote Stove",
+			"category": "stoves",
+			"price": 119,
+			"sku": "PP-ST-022",
+			"weightGrams": 198,
+			"materials": "Stainless legs, braided fuel line",
+			"care": "Invert-canister use requires the included windscreen."
+		},
+		{
+			"slug": "drift-20-quilt",
+			"name": "Drift 20 Quilt",
+			"category": "sleep",
+			"price": 329,
+			"sku": "PP-SL-320",
+			"weightGrams": 652,
+			"materials": "900-fill down, 10D liner",
+			"care": "Store uncompressed in the supplied cotton sack."
+		},
+		{
+			"slug": "tarn-inflatable-pad",
+			"name": "Tarn Inflatable Pad",
+			"category": "sleep",
+			"price": 189,
+			"sku": "PP-SL-410",
+			"weightGrams": 425,
+			"materials": "30D top, 70D base, 4.8 R-value",
+			"care": "Inflate with the pump sack, not breath, to limit interior moisture."
+		},
+		{
+			"slug": "cairn-foam-pad",
+			"name": "Cairn Foam Pad",
+			"category": "sleep",
+			"price": 49,
+			"sku": "PP-SL-105",
+			"weightGrams": 396,
+			"materials": "Cross-linked polyethylene foam",
+			"care": "Trim to length with ordinary scissors if desired; trimming voids nothing."
+		},
+		{
+			"slug": "talus-trekking-poles",
+			"name": "Talus Trekking Poles",
+			"category": "accessories",
+			"price": 159,
+			"sku": "PP-AC-770",
+			"weightGrams": 486,
+			"materials": "Carbon shafts, cork grips",
+			"care": "Dry the sections separated after wet trips to prevent seizing."
+		},
+		{
+			"slug": "wren-headlamp",
+			"name": "Wren Headlamp",
+			"category": "accessories",
+			"price": 54,
+			"sku": "PP-AC-880",
+			"weightGrams": 68,
+			"materials": "450 lumens max, IPX7, USB-C",
+			"care": "Firmware updates ship via the companion desktop tool."
+		}
+	],
+	"policies": {
+		"returnsWindowDays": 45,
+		"returnsExclusions": "Final-sale items and used fuel canisters cannot be returned.",
+		"freeShippingThreshold": 99,
+		"standardShippingFlat": 7,
+		"warrantyYears": 5,
+		"warrantyExclusions": "UV degradation of tent flies and normal DWR wear are excluded from the warranty.",
+		"repairCoveredCategories": ["tents", "packs", "shells"],
+		"repairTurnaroundBusinessDays": 15,
+		"repairFlatFeeOutOfWarranty": 35
+	},
+	"wholesale": {
+		"apiBase": "/docs/wholesale-api",
+		"authHeader": "X-PP-Wholesale-Key",
+		"rateLimitPerMinute": 120,
+		"paginationPageSize": 50,
+		"minimumOrderUnits": 24
+	},
+	"sizing": {
+		"shellSizes": "XS through XXL; the Meridian and Gale run a half size large, the Boreal runs true.",
+		"packTorsoRanges": "Kestrel and Merlin fit 16 to 21 inch torsos; the Swift is one-size."
+	},
+	"changelog": [
+		{
+			"version": "2.4.0",
+			"date": "2026-06-18",
+			"note": "Wren Headlamp firmware adds a red-light lock mode."
+		},
+		{
+			"version": "2.3.1",
+			"date": "2026-04-02",
+			"note": "Wholesale API pagination cursor bug fixed; page size unchanged at 50."
+		},
+		{
+			"version": "2.3.0",
+			"date": "2026-02-11",
+			"note": "Tarn Inflatable Pad revised valve; R-value re-tested at 4.8."
+		},
+		{
+			"version": "2.2.0",
+			"date": "2025-11-30",
+			"note": "Repair program turnaround improved from 20 to 15 business days."
+		}
+	],
+	"absentFactsNote": "Registered NEVER-STATE list — the generator must not mention: CEO or founder names, price matching, student or military discounts, physical retail stores, gift wrapping, carbon-neutrality or offset claims, international warranty transfer, live chat support, loyalty points, Black Friday dates."
+}
