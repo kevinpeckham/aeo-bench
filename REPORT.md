@@ -119,3 +119,82 @@ the study verdict and the economics-only reading stand on the
 corrected record. gpt-oss-120b's 52 empty-answer cells remain
 misses by registered decision; the structured answer channel is
 Study 2's fix.
+
+
+## Study 2 (2026-07-30): the discovery-file mechanism — unanimous across five models: nothing reads llms.txt, even when it is the only way to the answer; one sentence of agent-side affordance is worth more than every file on the site
+
+Pre-registered in [docs/BRIEF-STUDY2.md](docs/BRIEF-STUDY2.md). The
+fixture Study 1's scope limit demanded: a ~300-page weakly-linked
+catalog site with 12 registered orphan pages (recalls, safety
+bulletins, rebate terms) that exist in sitemap.xml and every
+llms.txt variant but are linked from no page. Six arms including a
+giant llms.txt (the grep-loop probe), hierarchical llms.txt
+(Cloudflare's fix), and the hinted mechanism isolator: one
+registered sentence in the fetch tool description naming
+machine-readable indexes. Structured submit_answer channel; 960
+cells across five models; zero harness errors; $79.10 total
+(pilot + matrix) against the $63–148 combined fences.
+
+**Pre-registered verdict: STUDY GATE FAIL — S2-H1 lands on the
+registered zero-consultation row in its strongest possible form,
+and S2-H4 fails by the letter on one model whose anatomy is
+protocol collapse, not file harm.**
+
+- **Orphan tasks: 0 for 200.** Every model scored 0/10 on the
+  orphan class in every file-bearing, non-hinted arm — sitemap,
+  curated, giant, hierarchical, all identical to baseline. The
+  files failed their best case: a site where they were the ONLY
+  path to the answer.
+- **Because nothing reads them — at any tier.** Unprompted
+  discovery-file consultation in 128 chances per model: opus-4.8
+  0, gpt-oss 0, sonnet 1, gemini 7, kimi-k3 11. The tier question
+  is answered in the strong direction: even the frontier tier never
+  once tried /llms.txt or /sitemap.xml, while models burned up to
+  ~100 guessed-path 404s per arm hunting URL patterns that never
+  included the two standardized index paths the industry is
+  shipping.
+- **One sentence beats every file.** The hinted arm — identical
+  site, plus "The site may also provide machine-readable indexes at
+  paths like /llms.txt or /sitemap.xml" in the tool description —
+  took orphans from 0/10 to 10/10 on opus and kimi, 9/10 on
+  gemini, 8/10 on sonnet, with consultation at 15–20/32, path
+  guessing collapsing (kimi: 43+ guesses to zero), and input cost
+  FALLING on the models that used it best (kimi −28%). The
+  interpretation table's second row lands in full: the discovery
+  layer's value is real, and the key to it lives in agent products
+  and harnesses, not in websites.
+- **Unreachable content gets confidently denied.** In non-hinted
+  arms, orphan cells ended with an explicit not-on-site declaration
+  148 times out of 150 on the four protocol-compliant models. For
+  the content class orphan pages actually carry (recalls, safety
+  bulletins), this is the sharpest practical warning in the series:
+  content your navigation cannot reach is not just unfound, it is
+  authoritatively declared nonexistent.
+- **S2-H4 fails by the letter via gpt-oss-120b** (linked-class
+  correctness 7 → 4 under hierarchical llms.txt), and the anatomy
+  is protocol collapse rather than file-induced harm: gpt-oss
+  failed to call submit_answer in 20–27 of 32 cells per arm (144
+  no-submits total) — the structured channel Study 2 added to fix
+  its Study 1 empty-text artifact is itself a protocol this model
+  does not reliably follow, and richer sites gave it more input to
+  drown in. Both readings published; the comparative margins are
+  met on every other model in every arm.
+- **The grep-loop claim goes unmeasured for the best possible
+  reason:** the giant-llms.txt arm produced 3 consulting cells
+  across five models — the hazard's premise (agents reading
+  llms.txt at all) fails before the hazard can occur. Registered
+  as vacuous per the brief; kimi's sparse consulting cells hint at
+  no giant penalty (n=2) but nothing publishable.
+
+**What this licenses.** For website owners: llms.txt and
+sitemap.xml do not help AI agents at the model layer today, even on
+sites built to need them; keep them for the crawler/product layer
+if you like (zero measured harm on compliant models), but the
+measured lever for agent-reachable content is LINKING it — or
+waiting for the agent products to ship the one-sentence affordance
+this study measured. For agent builders: the cheapest capability
+upgrade measured in this series is telling your fetch tool that
+/llms.txt exists; it converted 0/10 into 10/10 on the frontier
+tier for the cost of a sentence. For the ecosystem: the current
+llms.txt conversation has the beneficiary wrong — the file format
+is fine; the readers are missing.

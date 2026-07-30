@@ -1,0 +1,62 @@
+--- gemini-3.5-flash ---
+A2-baseline: orphan 0/10, deep 7/8, shallow 6/6, absent 8/8 | discovery 1/32 | no-submit 0 | in-tok 55233, fetches 15.4, guesses 104
+A2-sitemap: orphan 0/10, deep 7/8, shallow 6/6, absent 8/8 | discovery 1/32 | no-submit 0 | in-tok 55741, fetches 15.5, guesses 101
+A2-llms-curated: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 3/32 | no-submit 0 | in-tok 53677, fetches 15.3, guesses 98
+A2-llms-giant: orphan 0/10, deep 7/8, shallow 6/6, absent 8/8 | discovery 1/32 | no-submit 0 | in-tok 50533, fetches 15.1, guesses 99
+A2-llms-hier: orphan 0/10, deep 7/8, shallow 6/6, absent 8/8 | discovery 2/32 | no-submit 0 | in-tok 53075, fetches 15.2, guesses 96
+A2-hinted: orphan 9/10, deep 7/8, shallow 6/6, absent 8/8 | discovery 19/32 | no-submit 0 | in-tok 56430, fetches 10.7, guesses 15
+--- claude-sonnet-4.5 ---
+A2-baseline: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 1 | in-tok 50015, fetches 11.8, guesses 114
+A2-sitemap: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 0 | in-tok 49051, fetches 11.7, guesses 103
+A2-llms-curated: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 1 | in-tok 49556, fetches 11.7, guesses 106
+A2-llms-giant: orphan 0/10, deep 8/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 0 | in-tok 49294, fetches 11.6, guesses 101
+A2-llms-hier: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 1/32 | no-submit 0 | in-tok 48420, fetches 11.6, guesses 104
+A2-hinted: orphan 8/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 17/32 | no-submit 2 | in-tok 46633, fetches 8.3, guesses 13
+--- claude-opus-4.8 ---
+A2-baseline: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 0 | in-tok 18169, fetches 7.5, guesses 12
+A2-sitemap: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 0 | in-tok 18034, fetches 7.4, guesses 18
+A2-llms-curated: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 0 | in-tok 18711, fetches 7.8, guesses 19
+A2-llms-giant: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 0 | in-tok 17762, fetches 7.3, guesses 12
+A2-llms-hier: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 0 | in-tok 18583, fetches 7.7, guesses 16
+A2-hinted: orphan 10/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 15/32 | no-submit 0 | in-tok 18450, fetches 6.8, guesses 7
+--- kimi-k3 ---
+A2-baseline: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 3/32 | no-submit 0 | in-tok 29880, fetches 13.4, guesses 63
+A2-sitemap: orphan 0/10, deep 7/8, shallow 6/6, absent 8/8 | discovery 1/32 | no-submit 0 | in-tok 28489, fetches 12.6, guesses 48
+A2-llms-curated: orphan 0/10, deep 7/8, shallow 6/6, absent 8/8 | discovery 5/32 | no-submit 0 | in-tok 28255, fetches 12.7, guesses 56
+A2-llms-giant: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 2/32 | no-submit 0 | in-tok 29819, fetches 13.5, guesses 48
+A2-llms-hier: orphan 0/10, deep 7/8, shallow 6/6, absent 8/8 | discovery 3/32 | no-submit 0 | in-tok 28700, fetches 12.8, guesses 43
+A2-hinted: orphan 10/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 20/32 | no-submit 0 | in-tok 21544, fetches 7.2, guesses 0
+--- gpt-oss-120b ---
+A2-baseline: orphan 0/10, deep 3/8, shallow 4/6, absent 1/8 | discovery 0/32 | no-submit 24 | in-tok 4364, fetches 2.9, guesses 7
+A2-sitemap: orphan 0/10, deep 3/8, shallow 4/6, absent 2/8 | discovery 0/32 | no-submit 23 | in-tok 7826, fetches 4.6, guesses 19
+A2-llms-curated: orphan 0/10, deep 3/8, shallow 2/6, absent 0/8 | discovery 0/32 | no-submit 25 | in-tok 12257, fetches 5.8, guesses 37
+A2-llms-giant: orphan 0/10, deep 3/8, shallow 5/6, absent 3/8 | discovery 0/32 | no-submit 20 | in-tok 15699, fetches 6.9, guesses 53
+A2-llms-hier: orphan 0/10, deep 2/8, shallow 2/6, absent 1/8 | discovery 0/32 | no-submit 27 | in-tok 15422, fetches 6.6, guesses 51
+A2-hinted: orphan 0/10, deep 4/8, shallow 3/6, absent 0/8 | discovery 9/32 | no-submit 25 | in-tok 16870, fetches 5.4, guesses 21
+
+=== S2-H1 (orphan class, paired vs baseline, pooled) ===
+A2-sitemap: aid-only 0, baseline-only 0, p=1.00000
+A2-llms-curated: aid-only 0, baseline-only 0, p=1.00000
+A2-llms-hier: aid-only 0, baseline-only 0, p=1.00000
+
+=== S2-H2 (unprompted discovery consultation, non-hinted arms) ===
+gemini-3.5-flash: unprompted 7/128 | hinted 19/32
+claude-sonnet-4.5: unprompted 1/128 | hinted 17/32
+claude-opus-4.8: unprompted 0/128 | hinted 15/32
+kimi-k3: unprompted 11/128 | hinted 20/32
+gpt-oss-120b: unprompted 0/128 | hinted 9/32
+
+=== S2-H3 (grep-loop economics among consulting cells) ===
+gemini-3.5-flash: curated 90297 (n=3) | giant 88331 (n=1) | hier 98429 (n=2)
+claude-sonnet-4.5: curated n/a | giant n/a | hier 125961 (n=1)
+claude-opus-4.8: curated n/a | giant n/a | hier n/a
+kimi-k3: curated 75926 (n=5) | giant 65025 (n=2) | hier 58165 (n=3)
+gpt-oss-120b: curated n/a | giant n/a | hier n/a
+
+=== S2-H4 (comparative no-harm, linked classes + absent) ===
+gpt-oss-120b A2-llms-hier: HARM (linked 4 vs 7, false-answers 0 vs 0)
+
+=== Gates ===
+S2-H1 (a discovery arm moves the orphan class): FAIL
+S2-H4 (comparative no-harm): FAIL
+STUDY GATE: FAIL
