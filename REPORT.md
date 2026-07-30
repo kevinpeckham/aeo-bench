@@ -243,3 +243,54 @@ follow-ups, session guardrails) is outside this benchmark's scope;
 the sibling series' regression-gate suite is the standing
 instrument for that check. All Study 1/1′/2 gates are unchanged, as
 pinned.
+
+
+## Study 3 (2026-07-30): the affordance study — GATE PASS; the carrier wins, the giant index taxes without helping, and the candidate's harness design is settled
+
+Pre-registered in [docs/BRIEF-STUDY3.md](docs/BRIEF-STUDY3.md) with
+the carrier prediction stated before running: prefetching the index
+into context beats hinting the model to fetch it (the sibling
+series' hand-it-everything thesis, ported). Five arms on the frozen
+Study 2 fixture — control and hint reused from frozen records,
+prefetch-curated, prefetch-giant, and a read_site_index tool run
+fresh. 288 fresh cells across haiku-4.5, opus-4.8, and
+gemini-3.5-flash; zero harness errors; $11.33 against the $25–45
+fence.
+
+**Pre-registered verdict: STUDY GATE PASS — the series' first.**
+
+- **S3-H1 (candidate readiness) — PASS at ceiling.** Haiku 4.5
+  under the shipping design (prefetch-curated): orphans 10/10,
+  linked 14/14, absent 7/8 (the same honest live-chat denial),
+  zero no-submits — and **9.4k input tokens per solved task,
+  against 68.9k unaided and 41.3k under the hint.** The design the
+  lj-website agent would ship is 7.3× cheaper than baseline and
+  4.4× cheaper than the hint at equal-or-better accuracy.
+- **S3-H2 (the carrier prediction) — PASS.** Prefetch is
+  non-inferior to the hint on orphans everywhere (strictly better
+  pooled: 1 win, 0 losses — gemini's one hint miss disappears
+  under prefetch) at 3.9 vs 8.6 mean fetches. Every model solved
+  every orphan task under every fresh affordance: the entire
+  Study 2 catastrophe class dissolves under any deliberate
+  harness design.
+- **S3-H3 (the size read) — finally powered, and decisive.** The
+  giant everything-index bought nothing (orphan delta 0, linked
+  delta 1) and cost **2.68× the curated index's input**. For sites
+  with large llms.txt files — including lj-website's real
+  ~150-entry index — the harness guidance is: serve the agent a
+  CURATED slice in context; keep the full file for whoever else
+  arrives. Cloudflare's oversized-index concern is real in the
+  prefetch regime, even though the grep-loop never materialized
+  (models read the index once; they do not grep it).
+- **The tool arm is a strong second** — 10/10 orphans on all three
+  models, economics between prefetch and hint (13.5k/solved on
+  haiku). Tool-shaped affordance works; the pure carrier still
+  wins on cost because the index rides the cached system prompt
+  instead of a tool round-trip.
+
+**What ships.** The lj-website agent's retrieval design is now
+measured end to end: Haiku 4.5 (BRIEF-HAIKU's read), prefetching a
+curated site index into the system context (this study), with the
+hint sentence as the degraded-mode fallback. Combined cost of the
+three-study evidence base: ~$102. The affordance menu is public;
+the third-post sequel ("how to actually wire it") writes itself.

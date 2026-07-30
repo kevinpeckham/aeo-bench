@@ -1,0 +1,25 @@
+--- claude-haiku-4.5 ---
+A3-control: orphan 0/10, deep 8/8, shallow 6/6, absent 7/8 | no-submit 0 | fetches 12.2, in-tok 45222, in-tok/solved 68910
+A3-hint: orphan 10/10, deep 8/8, shallow 6/6, absent 7/8 | no-submit 0 | fetches 8.4, in-tok 40050, in-tok/solved 41341
+A3-prefetch: orphan 10/10, deep 8/8, shallow 6/6, absent 7/8 | no-submit 0 | fetches 3.1, in-tok 9086, in-tok/solved 9379
+A3-prefetch-giant: orphan 10/10, deep 7/8, shallow 6/6, absent 7/8 | no-submit 0 | fetches 2.4, in-tok 25294, in-tok/solved 26980
+A3-tool: orphan 10/10, deep 8/8, shallow 6/6, absent 7/8 | no-submit 0 | fetches 3.7, in-tok 13106, in-tok/solved 13529
+--- claude-opus-4.8 ---
+A3-control: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | no-submit 0 | fetches 7.8, in-tok 18711, in-tok/solved 29938
+A3-hint: orphan 10/10, deep 7/8, shallow 6/6, absent 7/8 | no-submit 0 | fetches 6.8, in-tok 18450, in-tok/solved 19680
+A3-prefetch: orphan 10/10, deep 7/8, shallow 6/6, absent 7/8 | no-submit 0 | fetches 2.3, in-tok 8493, in-tok/solved 9059
+A3-prefetch-giant: orphan 10/10, deep 7/8, shallow 6/6, absent 7/8 | no-submit 0 | fetches 1.8, in-tok 30417, in-tok/solved 32444
+A3-tool: orphan 10/10, deep 7/8, shallow 6/6, absent 7/8 | no-submit 0 | fetches 2.4, in-tok 9984, in-tok/solved 10649
+--- gemini-3.5-flash ---
+A3-control: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | no-submit 0 | fetches 15.3, in-tok 53677, in-tok/solved 85883
+A3-hint: orphan 9/10, deep 7/8, shallow 6/6, absent 8/8 | no-submit 0 | fetches 10.7, in-tok 56430, in-tok/solved 60192
+A3-prefetch: orphan 10/10, deep 7/8, shallow 6/6, absent 7/8 | no-submit 0 | fetches 6.1, in-tok 21835, in-tok/solved 23291
+A3-prefetch-giant: orphan 10/10, deep 7/8, shallow 6/6, absent 7/8 | no-submit 0 | fetches 5, in-tok 49778, in-tok/solved 53096
+A3-tool: orphan 10/10, deep 7/8, shallow 6/6, absent 8/8 | no-submit 0 | fetches 5.9, in-tok 21232, in-tok/solved 21917
+
+=== Gates ===
+S3-H1 (Haiku readiness under prefetch): PASS (orphan 10/10, linked 14 vs 14, absent 7/8, no-submit 0)
+S3-H2 (carrier non-inferior + cheaper fetches): PASS (wins 1, losses 0; fetches prefetch 3.9 vs hint 8.6)
+S3-H3 (size read): orphan delta 0, linked delta 1, input ratio giant/curated 2.68
+S3-H4 (comparative no-harm): PASS
+STUDY GATE: PASS
