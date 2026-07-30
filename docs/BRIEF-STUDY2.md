@@ -139,7 +139,8 @@ full matrix.
   fixture/harness/grader tests are committed.
 - **Full matrix:** +4 models = 768 further cells ≈ **$60–140**.
   Requires Kevin's explicit go-ahead after pilot results are
-  published.
+  published. AUTHORIZED 2026-07-30 ("Yes proceed with full matrix")
+  with pilot results committed in results/analysis-study2-pilot.txt.
 
 ## Disclosure
 
