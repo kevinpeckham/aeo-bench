@@ -1,0 +1,25 @@
+--- gemini-3.5-flash ---
+A-baseline: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 18125, fetches 4.9, repeats 0
+A-llmstxt: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 17572, fetches 4.8, repeats 0
+A-sitemap: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 17753, fetches 4.9, repeats 0
+A-markdown: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 14 | llms 0 sitemap 0 | mean in-tok 16018, fetches 4.8, repeats 0
+A-stacked: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 15 | llms 0 sitemap 0 | mean in-tok 17769, fetches 4.9, repeats 0
+
+=== H1 (paired aid vs baseline, present classes, pooled models) ===
+A-llmstxt: aid-only 0, baseline-only 0, one-sided p=1.0000
+A-sitemap: aid-only 0, baseline-only 0, one-sided p=1.0000
+A-markdown: aid-only 0, baseline-only 0, one-sided p=1.0000
+A-stacked: aid-only 0, baseline-only 0, one-sided p=1.0000
+
+=== H2 (markdown token economics, unprompted signals only) ===
+gemini-3.5-flash A-markdown: 14 signal cells, in-tok ratio vs baseline 27%
+gemini-3.5-flash A-stacked: 15 signal cells, in-tok ratio vs baseline 26%
+
+=== H3 (comparative no-harm) ===
+no aid arm harms correctness or induces fabrication beyond the registered margins
+
+=== Gates ===
+H1 (some aid improves correctness): FAIL
+H2 (markdown economics): PASS
+H3 (comparative no-harm): PASS
+STUDY GATE: FAIL
