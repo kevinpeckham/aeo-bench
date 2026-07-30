@@ -8,7 +8,8 @@ export type Matcher =
 	| { type: "substring"; value: string }
 	| { type: "anySubstring"; values: string[] }
 	| { type: "number"; value: number }
-	| { type: "sentinel" };
+	| { type: "sentinel" }
+	| { type: "orderNotFound" };
 
 export const SENTINEL = "NOT-ON-SITE";
 
@@ -40,6 +41,8 @@ export function grade(answer: string, matcher: Matcher): boolean {
 			);
 		case "number":
 			return !saidSentinel && numbersIn(answer).includes(matcher.value);
+		case "orderNotFound":
+			return saidSentinel || normalize(answer).includes("not found");
 	}
 }
 
@@ -90,5 +93,31 @@ export function gradeV2(answer: string, matcher: Matcher): boolean {
 			);
 		case "number":
 			return !saidSentinel && numbersInV2(answer).includes(matcher.value);
+		case "orderNotFound":
+			// Runner-level notOnSite also satisfies this; here: the answer
+			// itself conveys not-found (patterns defined below).
+			return (
+				saidSentinel || ORDER_NOT_FOUND_PATTERNS.some((p) => norm.includes(p))
+			);
 	}
+}
+
+/** Study 4 (docs/BRIEF-STUDY4.md): order-not-found matcher support. */
+export const ORDER_NOT_FOUND_PATTERNS = [
+	"not found",
+	"no order",
+	"couldn't find",
+	"could not find",
+	"doesn't exist",
+	"does not exist",
+	"no record",
+	"unable to find",
+	"cannot find",
+	"can't find",
+	"no such order",
+];
+
+export function orderNotFoundAnswer(answer: string): boolean {
+	const norm = normalizeV2(answer);
+	return ORDER_NOT_FOUND_PATTERNS.some((p) => norm.includes(p));
 }

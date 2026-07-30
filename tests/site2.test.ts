@@ -144,3 +144,60 @@ describe("Study 3 affordance texts", () => {
 		);
 	});
 });
+
+describe("Study 4 capability surface", () => {
+	test("order needles exist on no page; endpoints and card serve per arm", async () => {
+		const facts4 = (await import("../corpus/facts4.json")).default;
+		const pages = buildSite2();
+		const allHtml = [...pages.values()].map((p) => p.html).join("\n");
+		for (const o of facts4.orders) {
+			expect(allHtml.includes(o.number), `${o.number} leaked to a page`).toBe(
+				false,
+			);
+		}
+		const { startSite4 } = await import("../src/site/server4.js");
+		for (const arm of [
+			"C-control",
+			"C-card",
+			"C-affordance",
+			"C-mounted",
+		] as const) {
+			const site = startSite4(arm);
+			try {
+				const live = arm !== "C-control";
+				const card = await fetch(
+					`${site.origin}/.well-known/mcp/server-card.json`,
+				);
+				expect(card.status).toBe(live ? 200 : 404);
+				const good = await fetch(
+					`${site.origin}/api/order-status?number=PP-2026-0117`,
+				);
+				expect(good.status).toBe(live ? 200 : 404);
+				if (live) {
+					const body = (await good.json()) as { status: string };
+					expect(body.status).toBe("shipped");
+					const bad = await fetch(
+						`${site.origin}/api/order-status?number=PP-2026-0001`,
+					);
+					expect(bad.status).toBe(404);
+					const prod = await fetch(`${site.origin}/api/products/cirrus-2-tent`);
+					expect(((await prod.json()) as { price: number }).price).toBe(389);
+				}
+			} finally {
+				site.stop();
+			}
+		}
+	});
+	test("orderNotFound grading", async () => {
+		const { gradeV2 } = await import("../src/grading/answers.js");
+		expect(
+			gradeV2("I could not find any order with that number.", {
+				type: "orderNotFound",
+			}),
+		).toBe(true);
+		expect(gradeV2("Order not found.", { type: "orderNotFound" })).toBe(true);
+		expect(
+			gradeV2("It shipped on July 28 via UPS.", { type: "orderNotFound" }),
+		).toBe(false);
+	});
+});

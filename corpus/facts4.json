@@ -1,0 +1,110 @@
+{
+	"version": 1,
+	"seed": "hand-authored-20260731",
+	"orders": [
+		{
+			"number": "PP-2026-0117",
+			"status": "shipped",
+			"items": ["Cirrus 2 Tent"],
+			"shipDate": "2026-07-28",
+			"carrier": "UPS",
+			"tracking": "1ZPP20260117"
+		},
+		{
+			"number": "PP-2026-0142",
+			"status": "processing",
+			"items": ["Drift 20 Quilt", "Cairn Foam Pad"],
+			"shipDate": null,
+			"carrier": null,
+			"tracking": null
+		},
+		{
+			"number": "PP-2026-0155",
+			"status": "delivered",
+			"items": ["Wren Headlamp"],
+			"shipDate": "2026-07-21",
+			"carrier": "USPS",
+			"tracking": "94PP20260155"
+		},
+		{
+			"number": "PP-2026-0178",
+			"status": "backordered",
+			"items": ["Meridian Rain Shell"],
+			"shipDate": null,
+			"carrier": null,
+			"tracking": null,
+			"note": "expected to ship 2026-08-12"
+		},
+		{
+			"number": "PP-2026-0190",
+			"status": "shipped",
+			"items": ["Talus Trekking Poles", "Rill Filter Bottle"],
+			"shipDate": "2026-07-29",
+			"carrier": "FedEx",
+			"tracking": "61PP20260190"
+		},
+		{
+			"number": "PP-2026-0203",
+			"status": "delivered",
+			"items": ["Merlin 62 Pack"],
+			"shipDate": "2026-07-15",
+			"carrier": "UPS",
+			"tracking": "1ZPP20260203"
+		},
+		{
+			"number": "PP-2026-0214",
+			"status": "returned",
+			"items": ["Gale Wind Anorak"],
+			"shipDate": "2026-07-10",
+			"carrier": "USPS",
+			"tracking": "94PP20260214",
+			"note": "refund issued 2026-07-24"
+		},
+		{
+			"number": "PP-2026-0227",
+			"status": "processing",
+			"items": ["Ember Canister Stove", "Hearth Remote Stove"],
+			"shipDate": null,
+			"carrier": null,
+			"tracking": null
+		},
+		{
+			"number": "PP-2026-0231",
+			"status": "shipped",
+			"items": ["Tarn Inflatable Pad"],
+			"shipDate": "2026-07-30",
+			"carrier": "UPS",
+			"tracking": "1ZPP20260231"
+		},
+		{
+			"number": "PP-2026-0244",
+			"status": "delivered",
+			"items": ["Swift 24 Daypack"],
+			"shipDate": "2026-07-18",
+			"carrier": "FedEx",
+			"tracking": "61PP20260244"
+		},
+		{
+			"number": "PP-2026-0256",
+			"status": "processing",
+			"items": ["Boreal Down Parka"],
+			"shipDate": null,
+			"carrier": null,
+			"tracking": null
+		},
+		{
+			"number": "PP-2026-0269",
+			"status": "shipped",
+			"items": ["Stratus 3 Tent"],
+			"shipDate": "2026-07-30",
+			"carrier": "USPS",
+			"tracking": "94PP20260269"
+		}
+	],
+	"absentOrderNumbers": [
+		"PP-2026-0001",
+		"PP-2025-9999",
+		"PP-2026-0300",
+		"PP-2026-1111"
+	]
+}
