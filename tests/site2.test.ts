@@ -130,3 +130,17 @@ describe("server 2 arm semantics", () => {
 		}
 	});
 });
+
+describe("Study 3 affordance texts", () => {
+	test("registered prefetch header and tool description are pinned", async () => {
+		const { PREFETCH_HEADER, INDEX_TOOL_DESCRIPTION } = await import(
+			"../src/harness/fetch-runner3.js"
+		);
+		expect(PREFETCH_HEADER).toBe(
+			"Site index (served by the site at /llms.txt):",
+		);
+		expect(INDEX_TOOL_DESCRIPTION).toBe(
+			"Returns the site's machine-readable index of pages.",
+		);
+	});
+});
