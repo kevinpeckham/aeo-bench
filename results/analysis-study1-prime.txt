@@ -24,6 +24,11 @@ gpt-oss-120b A-llmstxt: present 22→24/28, absent 2→2/8
 gpt-oss-120b A-sitemap: present 25→25/28, absent 2→2/8
 gpt-oss-120b A-markdown: present 24→25/28, absent 0→0/8
 gpt-oss-120b A-stacked: present 24→24/28, absent 1→1/8
+claude-haiku-4.5 A-baseline: present 28→28/28, absent 7→8/8
+claude-haiku-4.5 A-llmstxt: present 28→28/28, absent 7→8/8
+claude-haiku-4.5 A-sitemap: present 28→28/28, absent 7→8/8
+claude-haiku-4.5 A-markdown: present 28→28/28, absent 7→8/8
+claude-haiku-4.5 A-stacked: present 28→28/28, absent 7→8/8
 
 === H1′ (paired aid vs baseline, present classes, pooled, v2) ===
 A-llmstxt: aid-only 2, baseline-only 2, one-sided p=0.6875

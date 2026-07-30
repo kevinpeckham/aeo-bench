@@ -33,6 +33,13 @@ A2-llms-curated: orphan 0/10, deep 3/8, shallow 2/6, absent 0/8 | discovery 0/32
 A2-llms-giant: orphan 0/10, deep 3/8, shallow 5/6, absent 3/8 | discovery 0/32 | no-submit 20 | in-tok 15699, fetches 6.9, guesses 53
 A2-llms-hier: orphan 0/10, deep 2/8, shallow 2/6, absent 1/8 | discovery 0/32 | no-submit 27 | in-tok 15422, fetches 6.6, guesses 51
 A2-hinted: orphan 0/10, deep 4/8, shallow 3/6, absent 0/8 | discovery 9/32 | no-submit 25 | in-tok 16870, fetches 5.4, guesses 21
+--- claude-haiku-4.5 ---
+A2-baseline: orphan 0/10, deep 8/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 0 | in-tok 45601, fetches 12, guesses 95
+A2-sitemap: orphan 0/10, deep 8/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 0 | in-tok 50281, fetches 12.2, guesses 95
+A2-llms-curated: orphan 0/10, deep 8/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 0 | in-tok 45222, fetches 12.2, guesses 96
+A2-llms-giant: orphan 0/10, deep 8/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 0 | in-tok 45659, fetches 12, guesses 95
+A2-llms-hier: orphan 0/10, deep 8/8, shallow 6/6, absent 7/8 | discovery 0/32 | no-submit 0 | in-tok 46330, fetches 12.3, guesses 109
+A2-hinted: orphan 10/10, deep 8/8, shallow 6/6, absent 7/8 | discovery 13/32 | no-submit 0 | in-tok 40050, fetches 8.4, guesses 16
 
 === S2-H1 (orphan class, paired vs baseline, pooled) ===
 A2-sitemap: aid-only 0, baseline-only 0, p=1.00000
@@ -45,6 +52,7 @@ claude-sonnet-4.5: unprompted 1/128 | hinted 17/32
 claude-opus-4.8: unprompted 0/128 | hinted 15/32
 kimi-k3: unprompted 11/128 | hinted 20/32
 gpt-oss-120b: unprompted 0/128 | hinted 9/32
+claude-haiku-4.5: unprompted 0/128 | hinted 13/32
 
 === S2-H3 (grep-loop economics among consulting cells) ===
 gemini-3.5-flash: curated 90297 (n=3) | giant 88331 (n=1) | hier 98429 (n=2)
@@ -52,6 +60,7 @@ claude-sonnet-4.5: curated n/a | giant n/a | hier 125961 (n=1)
 claude-opus-4.8: curated n/a | giant n/a | hier n/a
 kimi-k3: curated 75926 (n=5) | giant 65025 (n=2) | hier 58165 (n=3)
 gpt-oss-120b: curated n/a | giant n/a | hier n/a
+claude-haiku-4.5: curated n/a | giant n/a | hier n/a
 
 === S2-H4 (comparative no-harm, linked classes + absent) ===
 gpt-oss-120b A2-llms-hier: HARM (linked 4 vs 7, false-answers 0 vs 0)

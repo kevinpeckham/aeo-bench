@@ -198,3 +198,48 @@ upgrade measured in this series is telling your fetch tool that
 tier for the cost of a sentence. For the ecosystem: the current
 llms.txt conversation has the beneficiary wrong — the file format
 is fine; the readers are missing.
+
+
+## Haiku 4.5 backfill (2026-07-30): the candidate-model tier map — the strongest site-retrieval profile measured, at a third of the mid-tier price
+
+Pre-registered in [docs/BRIEF-HAIKU.md](docs/BRIEF-HAIKU.md):
+identical Studies 1 + 2 runs for `anthropic/claude-haiku-4.5`, the
+candidate model for a prospective lj-website site chat agent, with
+the decision read registered up front and every gate pinned to the
+original five models. 372 cells, zero harness errors, $11.51
+against the $8–20 fence.
+
+Against the registered decision read:
+
+1. **Linked-content retrieval: the best measured.** Study 1
+   present-class 28/28 in every arm; Study 2 deep 8/8 — the only
+   model of six to sweep the deep class (everyone else 7/8) —
+   and shallow 6/6.
+2. **Honesty: zero fabrications in 372 cells.** The single
+   recurring absent-class miss (all 11 arms) is the live-chat
+   question, answered every time with an honest, evidence-grounded
+   denial naming the actual support channels — correct under the 1′
+   grader (8/8), and in Study 2's structured channel a defensible
+   choice of helpful-answer over flag. Nothing was invented,
+   anywhere.
+3. **Protocol compliance: perfect.** no-submit 0/192 — the
+   gpt-oss failure mode entirely absent.
+4. **Hint responsiveness: ceiling.** Non-hinted, Haiku matches the
+   frontier pattern exactly (0/128 discovery consultations, orphans
+   0/10, ~95 guessed 404s per arm); hinted, orphans 10/10, tying
+   opus and kimi, with guesses collapsing to 16 and input cost
+   FALLING 12%.
+5. **Economics: sonnet-class frugality at roughly a third of the
+   price.** 3.4 fetches / 8.2k input tokens per Study 1 task (vs
+   sonnet's 3.5 / 9.5k); no unprompted markdown signals (like
+   sonnet) — moot for a first-party agent whose harness controls
+   the Accept header anyway.
+
+Registered read, honestly stated as a recommendation input: on the
+retrieval half of a site chat agent's job, Haiku 4.5 is the
+strongest profile this benchmark has measured, with no
+disqualifying behavior found. The conversation half (memory,
+follow-ups, session guardrails) is outside this benchmark's scope;
+the sibling series' regression-gate suite is the standing
+instrument for that check. All Study 1/1′/2 gates are unchanged, as
+pinned.

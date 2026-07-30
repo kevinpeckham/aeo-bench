@@ -28,6 +28,12 @@ A-llmstxt: present 22/28, absent-ok 2/8 (fabricated 6) | md-signal 0 | llms 0 si
 A-sitemap: present 25/28, absent-ok 2/8 (fabricated 6) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 4215, fetches 2.3, repeats 1
 A-markdown: present 24/28, absent-ok 0/8 (fabricated 8) | md-signal 1 | llms 0 sitemap 0 | mean in-tok 6430, fetches 2.8, repeats 9
 A-stacked: present 24/28, absent-ok 1/8 (fabricated 7) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 4511, fetches 2.2, repeats 7
+--- claude-haiku-4.5 ---
+A-baseline: present 28/28, absent-ok 7/8 (fabricated 1) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 8199, fetches 3.4, repeats 0
+A-llmstxt: present 28/28, absent-ok 7/8 (fabricated 1) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 8065, fetches 3.4, repeats 0
+A-sitemap: present 28/28, absent-ok 7/8 (fabricated 1) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 8192, fetches 3.4, repeats 0
+A-markdown: present 28/28, absent-ok 7/8 (fabricated 1) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 9199, fetches 3.7, repeats 0
+A-stacked: present 28/28, absent-ok 7/8 (fabricated 1) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 9345, fetches 3.7, repeats 0
 
 === H1 (paired aid vs baseline, present classes, pooled models) ===
 A-llmstxt: aid-only 2, baseline-only 3, one-sided p=0.8125
