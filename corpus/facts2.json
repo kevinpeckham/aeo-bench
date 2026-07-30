@@ -1,0 +1,211 @@
+{
+	"version": 1,
+	"seed": 20260730,
+	"catalog": {
+		"categories": [
+			"tents",
+			"packs",
+			"shells",
+			"stoves",
+			"sleep",
+			"trekking",
+			"hydration",
+			"cookware",
+			"lighting",
+			"navigation",
+			"repair",
+			"apparel"
+		],
+		"productsPerCategory": 20,
+		"nameAdjectives": [
+			"Alpine",
+			"Boreal",
+			"Cinder",
+			"Drift",
+			"Ember",
+			"Fell",
+			"Gale",
+			"Harrier",
+			"Icefall",
+			"Juniper",
+			"Krummholz",
+			"Larch",
+			"Moraine",
+			"Nimbus",
+			"Osprey",
+			"Pika",
+			"Quartz",
+			"Ridge",
+			"Scree",
+			"Talus",
+			"Umbra",
+			"Vole",
+			"Wren",
+			"Yarrow",
+			"Zephyr"
+		],
+		"nameNouns": [
+			"Trail",
+			"Summit",
+			"Basin",
+			"Col",
+			"Cirque",
+			"Bench",
+			"Fork",
+			"Notch",
+			"Saddle",
+			"Spur",
+			"Traverse",
+			"Cairn",
+			"Ledge",
+			"Hollow",
+			"Meadow",
+			"Rill",
+			"Tarn",
+			"Crag",
+			"Divide",
+			"Shelf"
+		]
+	},
+	"pinnedProducts": [
+		{
+			"slug": "cirrus-2-tent",
+			"name": "Cirrus 2 Tent",
+			"category": "tents",
+			"price": 389,
+			"sku": "PP-TN-201",
+			"weightGrams": 1720
+		},
+		{
+			"slug": "merlin-62-pack",
+			"name": "Merlin 62 Pack",
+			"category": "packs",
+			"price": 279,
+			"sku": "PP-PK-621",
+			"weightGrams": 1710
+		},
+		{
+			"slug": "meridian-rain-shell",
+			"name": "Meridian Rain Shell",
+			"category": "shells",
+			"price": 249,
+			"sku": "PP-SH-114",
+			"weightGrams": 312
+		},
+		{
+			"slug": "ember-canister-stove",
+			"name": "Ember Canister Stove",
+			"category": "stoves",
+			"price": 74,
+			"sku": "PP-ST-011",
+			"weightGrams": 83
+		},
+		{
+			"slug": "drift-20-quilt",
+			"name": "Drift 20 Quilt",
+			"category": "sleep",
+			"price": 329,
+			"sku": "PP-SL-320",
+			"weightGrams": 652
+		},
+		{
+			"slug": "talus-trekking-poles",
+			"name": "Talus Trekking Poles",
+			"category": "trekking",
+			"price": 159,
+			"sku": "PP-AC-770",
+			"weightGrams": 486
+		},
+		{
+			"slug": "wren-headlamp",
+			"name": "Wren Headlamp",
+			"category": "lighting",
+			"price": 54,
+			"sku": "PP-AC-880",
+			"weightGrams": 68
+		},
+		{
+			"slug": "rill-filter-bottle",
+			"name": "Rill Filter Bottle",
+			"category": "hydration",
+			"price": 42,
+			"sku": "PP-HY-140",
+			"weightGrams": 190
+		}
+	],
+	"orphans": [
+		{
+			"slug": "support/bulletins/2024-07-stove-o-ring",
+			"title": "Support bulletin 2024-07: Ember stove O-ring batch",
+			"fact": "Ember Canister Stoves with serial numbers beginning ES24C shipped with an out-of-spec O-ring; Petrel & Pine replaces them free of charge, including shipping both ways.",
+			"needle": "ES24C"
+		},
+		{
+			"slug": "support/bulletins/2024-11-pole-recall",
+			"title": "Support bulletin 2024-11: Talus pole lower-section recall",
+			"fact": "Talus Trekking Poles sold between March and June 2024 are recalled for a lower-section swaging defect; the affected lot code is TLP-24B.",
+			"needle": "TLP-24B"
+		},
+		{
+			"slug": "support/bulletins/2025-02-quilt-loft",
+			"title": "Support bulletin 2025-02: Drift quilt loft advisory",
+			"fact": "A small run of Drift 20 Quilts lofted below spec; affected units carry batch stamp DQ-25A and qualify for a 40 percent refund or replacement.",
+			"needle": "DQ-25A"
+		},
+		{
+			"slug": "support/rebate-terms",
+			"title": "Trail Days rebate terms",
+			"fact": "The Trail Days rebate pays 15 dollars per 150 dollars spent, submitted within 60 days of purchase with the original receipt.",
+			"needle": "60 days"
+		},
+		{
+			"slug": "support/discontinued/kestrel-48-pack",
+			"title": "Discontinued: Kestrel 48 Pack",
+			"fact": "The Kestrel 48 Pack was discontinued in January 2026; warranty service continues, and the closest current replacement is the Merlin 62 Pack.",
+			"needle": "January 2026"
+		},
+		{
+			"slug": "support/discontinued/gale-wind-anorak",
+			"title": "Discontinued: Gale Wind Anorak",
+			"fact": "The Gale Wind Anorak was discontinued in April 2026 when its 7D fabric supplier closed; remaining stock carries final-sale terms.",
+			"needle": "April 2026"
+		},
+		{
+			"slug": "support/legacy-firmware",
+			"title": "Legacy headlamp firmware archive",
+			"fact": "Wren Headlamp firmware versions before 2.0 are archived here; version 1.9.4 is the last release supporting the 2023 hardware revision.",
+			"needle": "1.9.4"
+		},
+		{
+			"slug": "support/battery-disposal",
+			"title": "Battery recycling and disposal",
+			"fact": "Petrel & Pine accepts worn lithium cells from any of its products by mail; request a prepaid recycling label from support and expect processing within 10 business days.",
+			"needle": "prepaid recycling label"
+		},
+		{
+			"slug": "support/bulletins/2025-06-bottle-cap",
+			"title": "Support bulletin 2025-06: Rill bottle cap torque",
+			"fact": "Early Rill Filter Bottles could crack at the cap if overtightened; the fix is the revision-C cap, shipped free on request.",
+			"needle": "revision-C"
+		},
+		{
+			"slug": "support/warranty-transfer-dealers",
+			"title": "Dealer warranty handling",
+			"fact": "Authorized dealers may submit warranty claims on behalf of customers using form PPW-12, with a 5 business day acknowledgment target.",
+			"needle": "PPW-12"
+		},
+		{
+			"slug": "support/bulletins/2026-01-pad-valve",
+			"title": "Support bulletin 2026-01: Tarn pad valve",
+			"fact": "Tarn Inflatable Pads made before the 2.3.0 valve revision can be retrofitted; the retrofit kit part number is TP-VK-2.",
+			"needle": "TP-VK-2"
+		},
+		{
+			"slug": "support/press-archive-2019",
+			"title": "Press archive: 2019 founding coverage",
+			"fact": "The 2019 coverage archive notes the workshop's first location on Wallace Street before the move to Larkspur Bench Road.",
+			"needle": "Wallace Street"
+		}
+	],
+	"neverStateNote": "The Study 1 NEVER-STATE list carries over verbatim: no CEO or founder names, price matching, student or military discounts, physical retail stores, gift wrapping, carbon or offset claims, live chat, loyalty points, or Black Friday dates anywhere in generated or hand-authored content."
+}

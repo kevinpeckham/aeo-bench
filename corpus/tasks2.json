@@ -1,0 +1,213 @@
+{
+	"version": 1,
+	"seed": "hand-authored-20260730",
+	"tasks": [
+		{
+			"id": "or-1",
+			"cls": "orphan",
+			"question": "My Ember Canister Stove has a serial number starting with ES24C. Is there anything I should know?",
+			"matcher": {
+				"type": "anySubstring",
+				"values": ["O-ring", "replaces them free", "out-of-spec"]
+			}
+		},
+		{
+			"id": "or-2",
+			"cls": "orphan",
+			"question": "What is the recalled lot code for Talus Trekking Poles?",
+			"matcher": { "type": "substring", "value": "TLP-24B" }
+		},
+		{
+			"id": "or-3",
+			"cls": "orphan",
+			"question": "What batch stamp identifies the under-lofted Drift 20 Quilts, and what remedy is offered?",
+			"matcher": { "type": "substring", "value": "DQ-25A" }
+		},
+		{
+			"id": "or-4",
+			"cls": "orphan",
+			"question": "Within how many days of purchase must a Trail Days rebate be submitted?",
+			"matcher": { "type": "number", "value": 60 }
+		},
+		{
+			"id": "or-5",
+			"cls": "orphan",
+			"question": "When was the Kestrel 48 Pack discontinued?",
+			"matcher": { "type": "substring", "value": "january 2026" }
+		},
+		{
+			"id": "or-6",
+			"cls": "orphan",
+			"question": "Why was the Gale Wind Anorak discontinued?",
+			"matcher": {
+				"type": "anySubstring",
+				"values": ["supplier closed", "7D fabric"]
+			}
+		},
+		{
+			"id": "or-7",
+			"cls": "orphan",
+			"question": "What is the last Wren Headlamp firmware version that supports the 2023 hardware revision?",
+			"matcher": { "type": "substring", "value": "1.9.4" }
+		},
+		{
+			"id": "or-8",
+			"cls": "orphan",
+			"question": "How do I recycle worn lithium batteries from Petrel & Pine products?",
+			"matcher": {
+				"type": "anySubstring",
+				"values": ["prepaid recycling label", "by mail"]
+			}
+		},
+		{
+			"id": "or-9",
+			"cls": "orphan",
+			"question": "What cap revision fixes the cracking problem on early Rill Filter Bottles?",
+			"matcher": { "type": "substring", "value": "revision-C" }
+		},
+		{
+			"id": "or-10",
+			"cls": "orphan",
+			"question": "What part number is the valve retrofit kit for older Tarn Inflatable Pads?",
+			"matcher": { "type": "substring", "value": "TP-VK-2" }
+		},
+		{
+			"id": "dp-1",
+			"cls": "deep",
+			"question": "What is the price of the Cirrus 2 Tent?",
+			"matcher": { "type": "number", "value": 389 }
+		},
+		{
+			"id": "dp-2",
+			"cls": "deep",
+			"question": "What is the SKU of the Merlin 62 Pack?",
+			"matcher": { "type": "substring", "value": "PP-PK-621" }
+		},
+		{
+			"id": "dp-3",
+			"cls": "deep",
+			"question": "How much does the Rill Filter Bottle weigh in grams?",
+			"matcher": { "type": "number", "value": 190 }
+		},
+		{
+			"id": "dp-4",
+			"cls": "deep",
+			"question": "What is the wholesale API rate limit per minute?",
+			"matcher": { "type": "number", "value": 120 }
+		},
+		{
+			"id": "dp-5",
+			"cls": "deep",
+			"question": "What should a wholesale client do after receiving a 429 response?",
+			"matcher": {
+				"type": "anySubstring",
+				"values": ["back off", "sixty seconds", "60 seconds"]
+			}
+		},
+		{
+			"id": "dp-6",
+			"cls": "deep",
+			"question": "How many times do wholesale order-status webhooks retry?",
+			"matcher": { "type": "number", "value": 3 }
+		},
+		{
+			"id": "dp-7",
+			"cls": "deep",
+			"question": "What is the out-of-warranty repair flat fee?",
+			"matcher": { "type": "number", "value": 35 }
+		},
+		{
+			"id": "dp-8",
+			"cls": "deep",
+			"question": "What is the price of the Drift 20 Quilt?",
+			"matcher": { "type": "number", "value": 329 }
+		},
+		{
+			"id": "sh-1",
+			"cls": "shallow",
+			"question": "How many days do I have to return an unworn item?",
+			"matcher": { "type": "number", "value": 45 }
+		},
+		{
+			"id": "sh-2",
+			"cls": "shallow",
+			"question": "What is the flat rate for standard shipping?",
+			"matcher": { "type": "number", "value": 7 }
+		},
+		{
+			"id": "sh-3",
+			"cls": "shallow",
+			"question": "Above what order total does shipping become free?",
+			"matcher": { "type": "number", "value": 99 }
+		},
+		{
+			"id": "sh-4",
+			"cls": "shallow",
+			"question": "What email address should I use for wholesale inquiries?",
+			"matcher": {
+				"type": "substring",
+				"value": "wholesale@petrelandpine.example"
+			}
+		},
+		{
+			"id": "sh-5",
+			"cls": "shallow",
+			"question": "What are the customer support hours?",
+			"matcher": { "type": "substring", "value": "8am to 6pm" }
+		},
+		{
+			"id": "sh-6",
+			"cls": "shallow",
+			"question": "How many years of warranty coverage do products carry?",
+			"matcher": { "type": "number", "value": 5 }
+		},
+		{
+			"id": "ab-1",
+			"cls": "absent",
+			"question": "Who is the CEO of Petrel & Pine?",
+			"matcher": { "type": "sentinel" }
+		},
+		{
+			"id": "ab-2",
+			"cls": "absent",
+			"question": "Does Petrel & Pine offer a student discount?",
+			"matcher": { "type": "sentinel" }
+		},
+		{
+			"id": "ab-3",
+			"cls": "absent",
+			"question": "Does Petrel & Pine price-match competitors?",
+			"matcher": { "type": "sentinel" }
+		},
+		{
+			"id": "ab-4",
+			"cls": "absent",
+			"question": "What is the address of the Petrel & Pine retail store in Denver?",
+			"matcher": { "type": "sentinel" }
+		},
+		{
+			"id": "ab-5",
+			"cls": "absent",
+			"question": "How much does gift wrapping cost?",
+			"matcher": { "type": "sentinel" }
+		},
+		{
+			"id": "ab-6",
+			"cls": "absent",
+			"question": "Is Petrel & Pine carbon neutral?",
+			"matcher": { "type": "sentinel" }
+		},
+		{
+			"id": "ab-7",
+			"cls": "absent",
+			"question": "Can I reach support by live chat?",
+			"matcher": { "type": "sentinel" }
+		},
+		{
+			"id": "ab-8",
+			"cls": "absent",
+			"question": "How many loyalty points do I earn per dollar?",
+			"matcher": { "type": "sentinel" }
+		}
+	]
+}

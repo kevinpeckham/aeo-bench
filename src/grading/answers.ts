@@ -51,9 +51,7 @@ export function grade(answer: string, matcher: Matcher): boolean {
 /** v2 normalization: v1 + unicode-dash family → "-", digit-am/pm despacing. */
 export function normalizeV2(text: string): string {
 	return normalize(
-		text
-			.replace(/[‐‑‒–—−]/g, "-")
-			.replace(/(\d)\s+(am|pm)\b/gi, "$1$2"),
+		text.replace(/[‐‑‒–—−]/g, "-").replace(/(\d)\s+(am|pm)\b/gi, "$1$2"),
 	);
 }
 
@@ -82,9 +80,7 @@ export function gradeV2(answer: string, matcher: Matcher): boolean {
 	const saidSentinel = norm.includes(SENTINEL.toLowerCase());
 	switch (matcher.type) {
 		case "sentinel":
-			return (
-				saidSentinel || ABSENCE_PATTERNS.some((p) => norm.includes(p))
-			);
+			return saidSentinel || ABSENCE_PATTERNS.some((p) => norm.includes(p));
 		case "substring":
 			return !saidSentinel && norm.includes(normalizeV2(matcher.value));
 		case "anySubstring":
