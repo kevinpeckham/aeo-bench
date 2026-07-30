@@ -1,0 +1,53 @@
+--- gemini-3.5-flash ---
+A-baseline: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 18125, fetches 4.9, repeats 0
+A-llmstxt: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 17572, fetches 4.8, repeats 0
+A-sitemap: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 17753, fetches 4.9, repeats 0
+A-markdown: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 14 | llms 0 sitemap 0 | mean in-tok 16018, fetches 4.8, repeats 0
+A-stacked: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 15 | llms 0 sitemap 0 | mean in-tok 17769, fetches 4.9, repeats 0
+--- claude-sonnet-4.5 ---
+A-baseline: present 28/28, absent-ok 7/8 (fabricated 1) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 9491, fetches 3.5, repeats 0
+A-llmstxt: present 28/28, absent-ok 7/8 (fabricated 1) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 9176, fetches 3.4, repeats 0
+A-sitemap: present 28/28, absent-ok 7/8 (fabricated 1) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 9595, fetches 3.6, repeats 0
+A-markdown: present 28/28, absent-ok 7/8 (fabricated 1) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 10252, fetches 3.6, repeats 0
+A-stacked: present 28/28, absent-ok 7/8 (fabricated 1) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 9833, fetches 3.4, repeats 0
+--- claude-opus-4.8 ---
+A-baseline: present 28/28, absent-ok 5/8 (fabricated 3) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 6882, fetches 2.7, repeats 0
+A-llmstxt: present 28/28, absent-ok 6/8 (fabricated 2) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 6832, fetches 2.7, repeats 0
+A-sitemap: present 28/28, absent-ok 6/8 (fabricated 2) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 6758, fetches 2.7, repeats 0
+A-markdown: present 28/28, absent-ok 6/8 (fabricated 2) | md-signal 24 | llms 0 sitemap 0 | mean in-tok 5810, fetches 2.9, repeats 0
+A-stacked: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 23 | llms 0 sitemap 0 | mean in-tok 6049, fetches 2.9, repeats 0
+--- kimi-k3 ---
+A-baseline: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 9265, fetches 4.4, repeats 0
+A-llmstxt: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 9430, fetches 4.6, repeats 0
+A-sitemap: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 8079, fetches 4.1, repeats 0
+A-markdown: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 1 | llms 0 sitemap 0 | mean in-tok 9232, fetches 4.3, repeats 0
+A-stacked: present 28/28, absent-ok 8/8 (fabricated 0) | md-signal 1 | llms 0 sitemap 0 | mean in-tok 9195, fetches 4.4, repeats 0
+--- gpt-oss-120b ---
+A-baseline: present 23/28, absent-ok 1/8 (fabricated 7) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 3832, fetches 2.2, repeats 1
+A-llmstxt: present 22/28, absent-ok 2/8 (fabricated 6) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 4229, fetches 2.3, repeats 3
+A-sitemap: present 25/28, absent-ok 2/8 (fabricated 6) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 4215, fetches 2.3, repeats 1
+A-markdown: present 24/28, absent-ok 0/8 (fabricated 8) | md-signal 1 | llms 0 sitemap 0 | mean in-tok 6430, fetches 2.8, repeats 9
+A-stacked: present 24/28, absent-ok 1/8 (fabricated 7) | md-signal 0 | llms 0 sitemap 0 | mean in-tok 4511, fetches 2.2, repeats 7
+
+=== H1 (paired aid vs baseline, present classes, pooled models) ===
+A-llmstxt: aid-only 2, baseline-only 3, one-sided p=0.8125
+A-sitemap: aid-only 3, baseline-only 1, one-sided p=0.3125
+A-markdown: aid-only 2, baseline-only 1, one-sided p=0.5000
+A-stacked: aid-only 3, baseline-only 2, one-sided p=0.5000
+
+=== H2 (markdown token economics, unprompted signals only) ===
+gemini-3.5-flash A-markdown: 14 signal cells, in-tok ratio vs baseline 27%
+gemini-3.5-flash A-stacked: 15 signal cells, in-tok ratio vs baseline 26%
+claude-opus-4.8 A-markdown: 22 signal cells, in-tok ratio vs baseline 80%
+claude-opus-4.8 A-stacked: 23 signal cells, in-tok ratio vs baseline 83%
+kimi-k3 A-markdown: 1 signal cells, in-tok ratio vs baseline 49%
+kimi-k3 A-stacked: 1 signal cells, in-tok ratio vs baseline 49%
+
+=== H3 (comparative no-harm) ===
+no aid arm harms correctness or induces fabrication beyond the registered margins
+
+=== Gates ===
+H1 (some aid improves correctness): FAIL
+H2 (markdown economics): FAIL
+H3 (comparative no-harm): PASS
+STUDY GATE: FAIL
