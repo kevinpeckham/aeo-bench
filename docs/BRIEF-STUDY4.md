@@ -71,7 +71,9 @@ submit_answer, gradeV2 matchers, temperature 0.
 Pilot: gemini-3.5-flash × 4 arms × 24 tasks = 96 cells ≈ **$2–4**
 (authorized 2026-07-31 "proceed"). Matrix: + haiku-4.5 and
 opus-4.8 = 192 further cells ≈ **$12–25**, on Kevin's go-ahead
-after pilot results publish.
+after pilot results publish. AUTHORIZED 2026-07-31 ("proceed with
+full matrix") with pilot results committed in
+results/analysis-study4-pilot.txt.
 
 ## Pre-registered hypotheses and gates
 
