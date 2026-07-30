@@ -1,0 +1,26 @@
+--- gemini-3.5-flash ---
+A2-baseline: orphan 0/10, deep 7/8, shallow 6/6, absent 8/8 | discovery 1/32 | no-submit 0 | in-tok 55233, fetches 15.4, guesses 104
+A2-sitemap: orphan 0/10, deep 7/8, shallow 6/6, absent 8/8 | discovery 1/32 | no-submit 0 | in-tok 55741, fetches 15.5, guesses 101
+A2-llms-curated: orphan 0/10, deep 7/8, shallow 6/6, absent 7/8 | discovery 3/32 | no-submit 0 | in-tok 53677, fetches 15.3, guesses 98
+A2-llms-giant: orphan 0/10, deep 7/8, shallow 6/6, absent 8/8 | discovery 1/32 | no-submit 0 | in-tok 50533, fetches 15.1, guesses 99
+A2-llms-hier: orphan 0/10, deep 7/8, shallow 6/6, absent 8/8 | discovery 2/32 | no-submit 0 | in-tok 53075, fetches 15.2, guesses 96
+A2-hinted: orphan 9/10, deep 7/8, shallow 6/6, absent 8/8 | discovery 19/32 | no-submit 0 | in-tok 56430, fetches 10.7, guesses 15
+
+=== S2-H1 (orphan class, paired vs baseline, pooled) ===
+A2-sitemap: aid-only 0, baseline-only 0, p=1.00000
+A2-llms-curated: aid-only 0, baseline-only 0, p=1.00000
+A2-llms-hier: aid-only 0, baseline-only 0, p=1.00000
+
+=== S2-H2 (unprompted discovery consultation, non-hinted arms) ===
+gemini-3.5-flash: unprompted 7/128 | hinted 19/32
+
+=== S2-H3 (grep-loop economics among consulting cells) ===
+gemini-3.5-flash: curated 90297 (n=3) | giant 88331 (n=1) | hier 98429 (n=2)
+
+=== S2-H4 (comparative no-harm, linked classes + absent) ===
+comparative no-harm holds everywhere
+
+=== Gates ===
+S2-H1 (a discovery arm moves the orphan class): FAIL
+S2-H4 (comparative no-harm): PASS
+STUDY GATE: FAIL
