@@ -13,7 +13,17 @@ const MODELS = [
 	"anthropic/claude-opus-4.8",
 	"moonshotai/kimi-k3",
 	"openai/gpt-oss-120b",
+	// Haiku backfill (docs/BRIEF-HAIKU.md): descriptive column; gates pinned.
+	"anthropic/claude-haiku-4.5",
 ];
+const GATE_MODELS = new Set([
+	"google/gemini-3.5-flash",
+	"anthropic/claude-sonnet-4.5",
+	"anthropic/claude-opus-4.8",
+	"moonshotai/kimi-k3",
+	"openai/gpt-oss-120b",
+]);
+
 const DISCOVERY_ARMS = ["A2-sitemap", "A2-llms-curated", "A2-llms-hier"];
 const ALL_ARMS = [
 	"A2-baseline",
@@ -78,6 +88,7 @@ for (const arm of DISCOVERY_ARMS) {
 	let aidOnly = 0;
 	let baseOnly = 0;
 	for (const model of active) {
+		if (!GATE_MODELS.has(model)) continue;
 		const base = new Map(
 			rows(model, "A2-baseline", "orphan").map((r) => [r.taskId, r]),
 		);
@@ -136,6 +147,7 @@ for (const model of active) {
 console.log("\n=== S2-H4 (comparative no-harm, linked classes + absent) ===");
 let h4 = true;
 for (const model of active) {
+	if (!GATE_MODELS.has(model)) continue;
 	const linked = (arm: string) =>
 		rows(model, arm).filter(
 			(r) => (r.cls === "shallow" || r.cls === "deep") && r.correct,

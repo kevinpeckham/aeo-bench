@@ -16,7 +16,17 @@ const MODELS = [
 	"anthropic/claude-opus-4.8",
 	"moonshotai/kimi-k3",
 	"openai/gpt-oss-120b",
+	// Haiku backfill (docs/BRIEF-HAIKU.md): descriptive column; gates pinned.
+	"anthropic/claude-haiku-4.5",
 ];
+const GATE_MODELS = new Set([
+	"google/gemini-3.5-flash",
+	"anthropic/claude-sonnet-4.5",
+	"anthropic/claude-opus-4.8",
+	"moonshotai/kimi-k3",
+	"openai/gpt-oss-120b",
+]);
+
 const AIDS = ["A-llmstxt", "A-sitemap", "A-markdown", "A-stacked"];
 const matchers = new Map<string, Matcher>(
 	tasksFile.tasks.map((t) => [t.id, t.matcher as Matcher]),
@@ -77,6 +87,7 @@ for (const arm of AIDS) {
 	let aidOnly = 0;
 	let baseOnly = 0;
 	for (const model of MODELS) {
+		if (!GATE_MODELS.has(model)) continue;
 		const base = new Map(
 			rows(model, "A-baseline")
 				.filter(present)
@@ -101,6 +112,7 @@ for (const arm of AIDS) {
 console.log("\n=== H3′ (comparative no-harm, v2) ===");
 let h3 = true;
 for (const model of MODELS) {
+	if (!GATE_MODELS.has(model)) continue;
 	const basePres = rows(model, "A-baseline")
 		.filter(present)
 		.filter((r) => r.correctV2).length;

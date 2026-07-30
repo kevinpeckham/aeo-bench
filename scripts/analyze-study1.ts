@@ -14,7 +14,17 @@ const MODELS = [
 	"anthropic/claude-opus-4.8",
 	"moonshotai/kimi-k3",
 	"openai/gpt-oss-120b",
+	// Haiku backfill (docs/BRIEF-HAIKU.md): descriptive column; gates pinned.
+	"anthropic/claude-haiku-4.5",
 ];
+const GATE_MODELS = new Set([
+	"google/gemini-3.5-flash",
+	"anthropic/claude-sonnet-4.5",
+	"anthropic/claude-opus-4.8",
+	"moonshotai/kimi-k3",
+	"openai/gpt-oss-120b",
+]);
+
 const AIDS = ["A-llmstxt", "A-sitemap", "A-markdown", "A-stacked"];
 
 const records: CellRecord[] = [];
@@ -71,6 +81,7 @@ for (const arm of AIDS) {
 	let aidOnly = 0;
 	let baseOnly = 0;
 	for (const model of activeModels) {
+		if (!GATE_MODELS.has(model)) continue;
 		const base = new Map(
 			rows(model, "A-baseline")
 				.filter(present)
@@ -102,12 +113,12 @@ for (const model of activeModels) {
 			(r) => r.sentMarkdownSignal && r.correct,
 		);
 		if (sig.length === 0) continue;
-		anySignals = true;
+		if (GATE_MODELS.has(model)) anySignals = true;
 		const baseCorrect = rows(model, "A-baseline").filter((r) => r.correct);
 		const mean = (rs: CellRecord[]) =>
 			rs.reduce((s, r) => s + r.tokensIn, 0) / Math.max(rs.length, 1);
 		const ratio = mean(sig) / Math.max(mean(baseCorrect), 1);
-		if (ratio > 0.6) h2 = false;
+		if (GATE_MODELS.has(model) && ratio > 0.6) h2 = false;
 		console.log(
 			`${short(model)} ${arm}: ${sig.length} signal cells, in-tok ratio vs baseline ${(ratio * 100).toFixed(0)}%`,
 		);
@@ -122,6 +133,7 @@ if (!anySignals)
 console.log("\n=== H3 (comparative no-harm) ===");
 let h3 = true;
 for (const model of activeModels) {
+	if (!GATE_MODELS.has(model)) continue;
 	const basePres = rows(model, "A-baseline")
 		.filter(present)
 		.filter((r) => r.correct).length;
