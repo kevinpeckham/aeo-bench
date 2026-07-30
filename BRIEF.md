@@ -131,7 +131,9 @@ Per cell: `correct` (mechanical), `tokensIn/Out`, `fetches`,
   brief and the fixture/harness/grader tests are committed.
 - **Full matrix:** +4 models = 720 further cells, ≈ **$40–90**
   (opus- and fable-class fetch loops dominate). Requires Kevin's
-  explicit go-ahead after pilot results are published.
+  explicit go-ahead after pilot results are published. AUTHORIZED
+  2026-07-30 ("Yes, full matrix") with pilot results committed in
+  results/analysis-study1-pilot.txt.
 
 ## Disclosure
 
