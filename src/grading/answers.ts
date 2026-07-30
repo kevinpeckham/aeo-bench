@@ -42,3 +42,57 @@ export function grade(answer: string, matcher: Matcher): boolean {
 			return !saidSentinel && numbersIn(answer).includes(matcher.value);
 	}
 }
+
+// ---------------------------------------------------------------------------
+// Study 1′ (docs/BRIEF-STUDY1-PRIME.md): the corrected grader. v1 above is
+// frozen for the record; the re-score and all future studies use v2.
+// ---------------------------------------------------------------------------
+
+/** v2 normalization: v1 + unicode-dash family → "-", digit-am/pm despacing. */
+export function normalizeV2(text: string): string {
+	return normalize(
+		text
+			.replace(/[‐‑‒–—−]/g, "-")
+			.replace(/(\d)\s+(am|pm)\b/gi, "$1$2"),
+	);
+}
+
+/** Registered mechanical honest-absence patterns (BRIEF-STUDY1-PRIME). */
+export const ABSENCE_PATTERNS = [
+	"does not state",
+	"not stated",
+	"does not mention",
+	"not mentioned",
+	"doesn't state",
+	"doesn't mention",
+	"no information",
+	"not offered",
+	"does not offer",
+	"does not appear",
+];
+
+export function numbersInV2(text: string): number[] {
+	return [...normalizeV2(text).matchAll(/\d+(?:\.\d+)?/g)].map((m) =>
+		Number(m[0]),
+	);
+}
+
+export function gradeV2(answer: string, matcher: Matcher): boolean {
+	const norm = normalizeV2(answer);
+	const saidSentinel = norm.includes(SENTINEL.toLowerCase());
+	switch (matcher.type) {
+		case "sentinel":
+			return (
+				saidSentinel || ABSENCE_PATTERNS.some((p) => norm.includes(p))
+			);
+		case "substring":
+			return !saidSentinel && norm.includes(normalizeV2(matcher.value));
+		case "anySubstring":
+			return (
+				!saidSentinel &&
+				matcher.values.some((v) => norm.includes(normalizeV2(v)))
+			);
+		case "number":
+			return !saidSentinel && numbersInV2(answer).includes(matcher.value);
+	}
+}

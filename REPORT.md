@@ -100,3 +100,22 @@ the adoption premise (agents ask for markdown) is
 model-dispositional, not general; the grep-loop hazard did not
 appear at this llms.txt size (single small file, as the article
 itself predicts).
+
+
+## Study 1′ (2026-07-30): the corrected grader (re-score as registered; verdict unchanged, record corrected)
+
+Pre-registered in [docs/BRIEF-STUDY1-PRIME.md](docs/BRIEF-STUDY1-PRIME.md):
+three grading corrections (digit-am/pm despacing, Unicode-dash
+normalization, a mechanical honest-absence pattern list for the
+absent class), re-scored over the frozen Study 1 records. Zero new
+spend. Movement, exactly as disclosed: opus-4.8's absent-class
+scores rise to 7–8/8 across arms (its "misses" were honest,
+sentinel-less denials; one phrasing falls outside the registered
+pattern list and stays a miss, as registered); gpt-oss-120b
+recovers 1–2 present cells per arm (the spaced-time and
+Unicode-dash defects); every other number is unchanged. H1′ remains
+FAIL (all p ≥ .50), H2 carries unchanged, H3′ passes everywhere —
+the study verdict and the economics-only reading stand on the
+corrected record. gpt-oss-120b's 52 empty-answer cells remain
+misses by registered decision; the structured answer channel is
+Study 2's fix.

@@ -1,0 +1,41 @@
+=== v1 → v1′ per model × arm (present correct / absent correct) ===
+gemini-3.5-flash A-baseline: present 28→28/28, absent 8→8/8
+gemini-3.5-flash A-llmstxt: present 28→28/28, absent 8→8/8
+gemini-3.5-flash A-sitemap: present 28→28/28, absent 8→8/8
+gemini-3.5-flash A-markdown: present 28→28/28, absent 8→8/8
+gemini-3.5-flash A-stacked: present 28→28/28, absent 8→8/8
+claude-sonnet-4.5 A-baseline: present 28→28/28, absent 7→8/8
+claude-sonnet-4.5 A-llmstxt: present 28→28/28, absent 7→8/8
+claude-sonnet-4.5 A-sitemap: present 28→28/28, absent 7→8/8
+claude-sonnet-4.5 A-markdown: present 28→28/28, absent 7→8/8
+claude-sonnet-4.5 A-stacked: present 28→28/28, absent 7→8/8
+claude-opus-4.8 A-baseline: present 28→28/28, absent 5→7/8
+claude-opus-4.8 A-llmstxt: present 28→28/28, absent 6→8/8
+claude-opus-4.8 A-sitemap: present 28→28/28, absent 6→8/8
+claude-opus-4.8 A-markdown: present 28→28/28, absent 6→8/8
+claude-opus-4.8 A-stacked: present 28→28/28, absent 8→8/8
+kimi-k3 A-baseline: present 28→28/28, absent 8→8/8
+kimi-k3 A-llmstxt: present 28→28/28, absent 8→8/8
+kimi-k3 A-sitemap: present 28→28/28, absent 8→8/8
+kimi-k3 A-markdown: present 28→28/28, absent 8→8/8
+kimi-k3 A-stacked: present 28→28/28, absent 8→8/8
+gpt-oss-120b A-baseline: present 23→24/28, absent 1→1/8
+gpt-oss-120b A-llmstxt: present 22→24/28, absent 2→2/8
+gpt-oss-120b A-sitemap: present 25→25/28, absent 2→2/8
+gpt-oss-120b A-markdown: present 24→25/28, absent 0→0/8
+gpt-oss-120b A-stacked: present 24→24/28, absent 1→1/8
+
+=== H1′ (paired aid vs baseline, present classes, pooled, v2) ===
+A-llmstxt: aid-only 2, baseline-only 2, one-sided p=0.6875
+A-sitemap: aid-only 2, baseline-only 1, one-sided p=0.5000
+A-markdown: aid-only 2, baseline-only 1, one-sided p=0.5000
+A-stacked: aid-only 2, baseline-only 2, one-sided p=0.6875
+
+=== H3′ (comparative no-harm, v2) ===
+comparative no-harm holds under v2 everywhere
+
+=== Gates (Study 1′) ===
+H1′: FAIL
+H2: carried unchanged (no grading dependency) — FAIL by the letter via opus's ratio
+H3′: PASS
+STUDY GATE (1′): FAIL

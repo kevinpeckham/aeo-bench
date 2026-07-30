@@ -50,3 +50,23 @@ describe("grade", () => {
 		).toBe(false);
 	});
 });
+
+import { gradeV2, normalizeV2 } from "../src/grading/answers.js";
+
+describe("gradeV2 (Study 1′ corrections)", () => {
+	test("time spacing and unicode dashes normalize", () => {
+		expect(normalizeV2("8 am to 6 pm")).toBe("8am to 6pm");
+		expect(gradeV2("Monday to Friday, 8 am to 6 pm Mountain Time.", { type: "substring", value: "8am to 6pm" })).toBe(true);
+		expect(gradeV2("It added a red‑light lock mode.", { type: "substring", value: "red-light lock" })).toBe(true);
+	});
+	test("honest absence phrasing counts for sentinel tasks only", () => {
+		expect(gradeV2("The site does not state anything about a student discount.", { type: "sentinel" })).toBe(true);
+		expect(gradeV2("No — the site lists email, phone, and mail only; live chat is not offered.", { type: "sentinel" })).toBe(true);
+		expect(gradeV2("Probably around 10%?", { type: "sentinel" })).toBe(false);
+		expect(gradeV2("", { type: "sentinel" })).toBe(false);
+	});
+	test("present-class rules unchanged: sentinel-bearing answers stay wrong", () => {
+		expect(gradeV2("NOT-ON-SITE (maybe $389?)", { type: "number", value: 389 })).toBe(false);
+		expect(gradeV2("It costs $389.", { type: "number", value: 389 })).toBe(true);
+	});
+});
