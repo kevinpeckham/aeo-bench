@@ -294,3 +294,67 @@ curated site index into the system context (this study), with the
 hint sentence as the degraded-mode fallback. Combined cost of the
 three-study evidence base: ~$102. The affordance menu is public;
 the third-post sequel ("how to actually wire it") writes itself.
+
+
+## Study 4 (2026-07-31): the capability layer — GATE PASS at every tier; nothing discovers the server card, everything uses the mounted tool, and API preference is necessity-driven everywhere
+
+Pre-registered in [docs/BRIEF-STUDY4.md](docs/BRIEF-STUDY4.md). The
+frozen Study 2 site gained an order-status endpoint (12 seeded
+orders on no page — the capability orphan class), a structured
+product endpoint duplicating page facts (the both-ways class), and
+an MCP server card at the well-known path. Four arms
+(control / card / affordance / mounted), 288 cells across
+gemini-3.5-flash, haiku-4.5, and opus-4.8; zero harness errors;
+$13.59 total (pilot + matrix) against the $14–29 combined fences.
+
+**Pre-registered verdict: STUDY GATE PASS — all three gates, with
+both registered predictions confirmed at every tier.**
+
+- **C4-H1 (the mechanism): 24/24 paired discordants, p ≈ 4×10⁻⁸.**
+  Capability tasks: 0/8 in control and card arms on every model
+  (unsolvable as constructed), 8/8 mounted on every model.
+- **Prediction 1, third confirmation, now universal:** the server
+  card was consulted ZERO times in the pure-discovery arm by all
+  three models. llms.txt, sitemap.xml, and now MCP server cards:
+  three well-known file classes, one law — nothing reads them
+  unprompted, at any tier measured.
+- **The affordance two-hop works at every tier.** Told only that
+  the card MAY exist, all three models read it (12–15 consults)
+  and chained through to the API: capability 8/8 gemini, 8/8
+  haiku, 7/8 opus. One sentence buys the whole capability layer,
+  minus one opus fumble.
+- **The novel result — API preference is necessity-driven at every
+  tier.** In the affordance arm, with full knowledge of both
+  endpoints, every model answered every product question from
+  PAGES (0/24 via API) while using the API for orders it could get
+  no other way. Mounted flips it: gemini and opus route product
+  lookups through the tool 8/8, haiku 4/8. Knowing an endpoint
+  exists changes nothing about habits; holding the tool does — the
+  sibling series' tool-availability lesson (AN) in its purest form
+  yet.
+- **Economics: mounted is the cheapest arm for every model.**
+  Haiku 9.5k mean input tokens per cell vs 51.4k control (5.4×);
+  opus 6.6k vs 13.6k; gemini 29.1k vs 50.9k. Structured
+  capabilities do not just enable transactional answers — they
+  make everything cheaper by replacing page crawls with one call.
+- **Honesty: zero invented order statuses in 288 cells.** Every
+  nonexistent order was reported not-found; haiku's only recurring
+  absent miss remains its honest, evidence-grounded live-chat
+  denial (all four arms — the same phrasing class the 1′ grader
+  documents). The pilot's tool-404 protocol stall (gemini, 2
+  cells) did not recur on haiku or opus.
+
+**What this licenses.** The capability layer behaves exactly like
+the discovery layer: real value, zero unprompted discovery. Ship
+guidance: MCP server cards and API catalogs are worth serving ONLY
+as targets for harness-side affordances or integrations — a card
+alone is unread at every tier; one affordance sentence buys the
+two-hop chain; mounting the tools buys routing AND the largest cost
+reduction measured in this series. The concierge's mounted-tools
+architecture is validated on its own model with the strongest
+numbers in the study. Cloudflare's four agent-readiness questions
+are now all measured: agents cannot find you by the files (1–2, 4),
+markdown helps whoever asks for it (1), and capabilities pay for
+themselves the moment the consuming side holds them (4) — the
+consuming side being, in every single measurement, where the
+missing half of agent readiness lives.

@@ -1,0 +1,21 @@
+--- gemini-3.5-flash ---
+C-control: capability 0/8, bothways 8/8 (via API 0/8), absent 8/8 | card 0 | api-uses 5 | in-tok 50919
+C-card: capability 0/8, bothways 8/8 (via API 0/8), absent 8/8 | card 0 | api-uses 3 | in-tok 50812
+C-affordance: capability 8/8, bothways 8/8 (via API 0/8), absent 8/8 | card 12 | api-uses 33 | in-tok 41427
+C-mounted: capability 8/8, bothways 8/8 (via API 8/8), absent 6/8 | card 0 | api-uses 44 | in-tok 29098
+--- claude-haiku-4.5 ---
+C-control: capability 0/8, bothways 8/8 (via API 0/8), absent 7/8 | card 0 | api-uses 19 | in-tok 51425
+C-card: capability 0/8, bothways 8/8 (via API 0/8), absent 7/8 | card 0 | api-uses 19 | in-tok 50613
+C-affordance: capability 8/8, bothways 8/8 (via API 0/8), absent 7/8 | card 14 | api-uses 29 | in-tok 31704
+C-mounted: capability 8/8, bothways 8/8 (via API 4/8), absent 7/8 | card 0 | api-uses 16 | in-tok 9453
+--- claude-opus-4.8 ---
+C-control: capability 0/8, bothways 8/8 (via API 0/8), absent 7/8 | card 0 | api-uses 0 | in-tok 13571
+C-card: capability 0/8, bothways 8/8 (via API 0/8), absent 7/8 | card 0 | api-uses 0 | in-tok 13303
+C-affordance: capability 7/8, bothways 8/8 (via API 0/8), absent 7/8 | card 15 | api-uses 12 | in-tok 11230
+C-mounted: capability 8/8, bothways 8/8 (via API 8/8), absent 7/8 | card 0 | api-uses 20 | in-tok 6583
+
+=== Gates ===
+C4-H1 (mounted moves the capability class): PASS (aid-only 24, base-only 0, p=0.00000)
+C4-H3 (zero invented order statuses + absent margin): PASS (inventions 0)
+C4-H4 (both-ways no-harm): PASS
+STUDY GATE: PASS
